@@ -1,0 +1,55 @@
+创建一个目录 mkdir 目录名    
+跳转到当前目录：cd 目录名
+显示当前目录：  pwd
+把文件添加到仓库：git add 文件名
+把文件提交到仓库：git commit -m "备注信息"
+查看文件状态：git status
+去查看文件发生的变化：git diff 文件名
+文本的日志的，使用命令：git log
+git log --pretty=oneline 可以简化参数
+上一个版本的表示方法是：HEAD^ ，多个则是HEAD~1000
+版本返回：git reset -- hard HEAD^
+git reflog用来记录你的每一次命令
+可以用命令： git reset --hard 版本号，回到指定版本号
+git checkout   --file  可以丢弃工作区的修改
+git checkout -- file 当误删也可用来恢复
+把本地库的所有内容推送到远程库上： 
+使用命令： git push -u origin master
+从现在起，只要本地做了提交（git commit ） 就可以通过命令：
+ git push origin master. 推送到远程github的仓库
+创建分支 get checkout -b link(创建并切换到link分支)
+我们准备把它克隆到本地：
+使用命令：git clone
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>
+
+创建+切换分支：git checkout -b <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
+
+用带参数的git log也可以看到分支的合并情况：
+命令：git log --graph --pretty=oneline --abbrev-commit
+推送主分支：git push origin master.
+推送link分支：git push origin link.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+激活前清除hosts中屏蔽域名, 激活后请将“0.0.0.0 account.jetbrains.com”及“0.0.0.0 www.jetbrains.com”添加到hosts文件中
